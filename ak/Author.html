@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>StrOkIT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="center-block">
+
+        <a href="strokit.html">
+            <img class="logo" src="images\logo.jpg" alt="StrOkIT">
+            </img>
+        </a>
+
+        <hr class="hr"></hr></p>
+
+        <form id="myform" method="get" action="">
+            <fieldset class="fd">
+                <legend><h3>Катталуу учун электрондук адрес жана пароль жаз</h3></legend>
+                <p>
+                    <label>Электрондук адрес: </label>
+                    <input id="mail1" name="email" type="email" autocomplete="of" required/>
+                </p>
+
+                <p>
+                    <label class="tab1">Пароль:</label>
+                    <input name="pass1" type="password" class="required password" minlength="1" id="pwd" />
+                </p>
+
+                <p>
+                    <label class="tab2">Паролду кайтала:</label>
+
+                    <input id="pwd2" name="pass2" class="required password" type="password" minlength="1" equalto="#pwd"/>
+                </p>
+                <div class="submit1">
+                    <p>
+                        <button class="button" type="button" value="Каттоо">Катто</button>
+                    </p>
+                    </div>
+
+            </fieldset>
+        </form>
+
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script src="js/additional-methods.js"></script>
+
+        <script src="js/validate.js"></script>
+
+
+
+    </div>
+
+</body>
+</html>
