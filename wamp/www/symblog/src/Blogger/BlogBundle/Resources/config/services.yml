@@ -1,0 +1,16 @@
+services:
+    blogger_blog.twig.extension:
+        class: Blogger\BlogBundle\Twig\Extensions\BloggerBlogExtension
+        tags:
+            - { name: twig.extension }
+    blogger.symblog.admin.blog:
+        class: Blogger\BlogBundle\Admin\BlogAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: symblog, label: Blogs }
+        arguments: [null, Blogger\BlogBundle\Entity\Blog, BloggerBlogBundle:BlogAdmin]
+
+    blogger.symblog.admin.comment:
+        class: Blogger\BlogBundle\Admin\CommentAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: symblog, label: Comments }
+        arguments: [null, Blogger\BlogBundle\Entity\Comment, BloggerBlogBundle:CommentAdmin]
